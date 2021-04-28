@@ -10,4 +10,19 @@ function solution(n) {
   return answer;
 }
 
+function solution(n) {
+  let result = "";
+  let rest = 0;
+  while (n > 0) {
+    rest = n % 3;
+    n = Math.floor(n / 3);
+    if (rest === 0) {
+      rest = 4;
+      n--;
+    }
+    result = rest + result;
+  }
+  return result;
+}
+
 console.log(solution(n));
