@@ -1,12 +1,12 @@
 const s = "[](){}";
 
 function solution(s) {
-  let result = 0;
+  let answer = 0;
   for (let i = 0; i < s.length; i++) {
     const str = s.slice(i, s.length) + s.slice(0, i);
-    if (isTrue(str)) result++;
+    if (isTrue(str)) answer++;
   }
-  return result;
+  return answer;
 }
 
 function isTrue(str) {
