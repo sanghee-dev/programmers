@@ -7,7 +7,7 @@ const commands = [
 
 function solution(array, commands) {
   return commands.map(
-    (v) => array.slice(v[0] - 1, v[1]).sort((a, b) => a - b)[v[2] - 1]
+    (c) => array.slice(c[0] - 1, c[1]).sort((a, b) => a - b)[c[2] - 1]
   );
 }
 
